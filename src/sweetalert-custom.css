@@ -1,0 +1,158 @@
+/* SweetAlert2 Custom CSS - Fix button visibility issues */
+
+/* Ensure buttons are always visible */
+.swal2-popup .swal2-actions {
+  display: flex !important;
+  gap: 0.5rem !important;
+  margin-top: 1rem !important;
+}
+
+.swal2-popup .swal2-confirm {
+  background-color: #3085d6 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.swal2-popup .swal2-confirm:hover {
+  background-color: #2563eb !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.swal2-popup .swal2-cancel {
+  background-color: #6b7280 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.swal2-popup .swal2-cancel:hover {
+  background-color: #4b5563 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Special styling for different button types */
+.swal2-popup .swal2-confirm.swal2-styled {
+  background-color: #10b981 !important;
+}
+
+.swal2-popup .swal2-confirm.swal2-styled:hover {
+  background-color: #059669 !important;
+}
+
+/* Ensure popup container is properly styled */
+.swal2-container {
+  z-index: 9999 !important;
+}
+
+.swal2-popup {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  padding: 1.5rem !important;
+}
+
+/* Fix title styling */
+.swal2-title {
+  color: #1f2937 !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+/* Fix content/text styling */
+.swal2-html-container,
+.swal2-text {
+  color: #4b5563 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+}
+
+/* Fix icon styling */
+.swal2-icon {
+  margin-bottom: 1rem !important;
+}
+
+/* Fix input field styling */
+.swal2-input {
+  border: 1px solid #d1d5db !important;
+  border-radius: 0.375rem !important;
+  padding: 0.5rem 0.75rem !important;
+  font-size: 0.875rem !important;
+  color: #1f2937 !important;
+  width: 100% !important;
+  margin-top: 0.5rem !important;
+}
+
+.swal2-input:focus {
+  outline: none !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* Fix validation message styling */
+.swal2-validation-message {
+  color: #ef4444 !important;
+  font-size: 0.75rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Ensure modal backdrop is properly styled */
+.swal2-backdrop-show {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+/* Fix loading spinner */
+.swal2-loader {
+  border-color: #3b82f6 !important;
+  border-right-color: transparent !important;
+}
+
+/* Fix close button */
+.swal2-close {
+  color: #6b7280 !important;
+  font-size: 1.5rem !important;
+  opacity: 1 !important;
+}
+
+.swal2-close:hover {
+  color: #374151 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .swal2-popup {
+    margin: 1rem !important;
+    padding: 1rem !important;
+  }
+  
+  .swal2-title {
+    font-size: 1.125rem !important;
+  }
+  
+  .swal2-actions {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+  
+  .swal2-confirm,
+  .swal2-cancel {
+    width: 100% !important;
+  }
+}
